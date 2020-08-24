@@ -82,8 +82,4 @@ o = s:option(Flag, "noip_as_chnip",
 	translate("accept reply without ipaddr (A/AAAA query)"))
 o.rmempty     = false
 
-local apply=luci.http.formvalue("cbi.apply")
-if apply then
-	luci.sys.call("/etc/init.d/chinadns-ng restart >/dev/null 2>&1; logger -t 'luci-app-chinadns-ng' -p info 'chinadns-ng restarted.'")
-end
 return m
