@@ -62,7 +62,7 @@ o.rmempty     = false
 
 o = s:option(Value, "trust_dns",
 	translate("Trusted DNS Servers"),
-	translate("Use commas to separate multiple ip address，Max 2 Servers"))
+	translate("Use commas to separate multiple ip address, Max 2 Servers"))
 o.placeholder = "127.0.0.1#5300"
 o.default     = "127.0.0.1#5300"
 o.rmempty     = false
@@ -74,7 +74,7 @@ o.rmempty     = false
 
 o = s:option(Flag, "reuse_port",
 	translate("reuse_port"),
-	translate("reuse_port，for Multi-process load balancing"))
+	translate("reuse_port, for Multi-process load balancing"))
 o.rmempty     = false
 
 o = s:option(Flag, "noip_as_chnip",
