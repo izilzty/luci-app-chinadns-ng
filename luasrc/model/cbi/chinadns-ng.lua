@@ -82,4 +82,9 @@ o = s:option(Flag, "noip_as_chnip",
 	translate("accept reply without ipaddr (A/AAAA query)"))
 o.rmempty     = false
 
+o = s:option(Flag, "no_ipv6",
+	translate("disable ipv6-address query"),
+	translate("disable ipv6-address query (qtype: AAAA)"))
+o.rmempty     = false
+
 return m

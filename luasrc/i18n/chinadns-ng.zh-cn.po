@@ -64,3 +64,8 @@ msgstr "查询超时时间 秒"
 msgid "repeat_times"
 msgstr "同一地址对可信 DNS 发送查询包数量"
 
+msgid "disable ipv6-address query"
+msgstr "禁用ipv6查询"
+
+msgid "disable ipv6-address query (qtype: AAAA)"
+msgstr "禁用ipv6查询（记录类型：AAAA）"
