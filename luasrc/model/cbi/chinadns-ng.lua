@@ -86,14 +86,14 @@ o = s:option(Value, "no_ipv6",
 	translate("disable ipv6-address query"),
 	translate("disable ipv6-address query (qtype: AAAA)"))
 o:value("0", translate("none"))
-o:value("a", translate("all (-a)"))
-o:value("m", translate("name with tag chn (-m)"))
-o:value("g", translate("name with tag gfw (-g)"))
-o:value("n", translate("name with tag none (-n)"))
-o:value("c", translate("do not forward to china upstream (-c)"))
-o:value("t", translate("do not forward to trust upstream (-t)"))
-o:value("C", translate("check answer ip of china upstream (-C)"))
-o:value("T", translate("check answer ip of trust upstream (-T)"))
+o:value("a", translate("all (a)"))
+o:value("m", translate("name with tag chn (m)"))
+o:value("g", translate("name with tag gfw (g)"))
+o:value("n", translate("name with tag none (n)"))
+o:value("c", translate("do not forward to china upstream (c)"))
+o:value("t", translate("do not forward to trust upstream (t)"))
+o:value("C", translate("check answer ip of china upstream (C)"))
+o:value("T", translate("check answer ip of trust upstream (T)"))
 o.default     = "0"
 
 o = s:option(Value, "default_tag", translate("Domain default tag"))

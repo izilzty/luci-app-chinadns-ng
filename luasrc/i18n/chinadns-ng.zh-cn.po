@@ -73,29 +73,29 @@ msgstr "禁用ipv6查询（记录类型：AAAA）"
 msgid "none"
 msgstr "无"
 
-msgid "all (-a)"
-msgstr "所有查询（-a）"
+msgid "all (a)"
+msgstr "所有查询（a）"
 
-msgid "name with tag chn (-m)"
-msgstr "标签为chn的查询（-m）"
+msgid "name with tag chn (m)"
+msgstr "标签为chn的查询（m）"
 
-msgid "name with tag gfw (-g)"
-msgstr "标签为gfw的查询（-g）"
+msgid "name with tag gfw (g)"
+msgstr "标签为gfw的查询（g）"
 
-msgid "name with tag none (-n)"
-msgstr "标签为none的查询（-n）"
+msgid "name with tag none (n)"
+msgstr "标签为none的查询（n）"
 
-msgid "do not forward to china upstream (-c)"
-msgstr "禁止向china上游转发查询（-c）"
+msgid "do not forward to china upstream (c)"
+msgstr "禁止向china上游转发查询（c）"
 
-msgid "do not forward to trust upstream (-t)"
-msgstr "禁止向trust上游转发查询（-t）"
+msgid "do not forward to trust upstream (t)"
+msgstr "禁止向trust上游转发查询（t）"
 
-msgid "check answer ip of china upstream (-C)"
-msgstr "当标签为none域名的查询只存在china上游路径时，过滤china上游的非大陆ip响应（-C）"
+msgid "check answer ip of china upstream (C)"
+msgstr "当标签为none域名的查询只存在china上游路径时，过滤china上游的非大陆ip响应（C）"
 
-msgid "check answer ip of trust upstream (-T)"
-msgstr "当标签为none域名的查询只存在trust上游路径时，过滤trust上游的非大陆ip响应（-T）"
+msgid "check answer ip of trust upstream (T)"
+msgstr "当标签为none域名的查询只存在trust上游路径时，过滤trust上游的非大陆ip响应（T）"
 
 msgid "Domain default tag"
 msgstr "默认域名标签"
