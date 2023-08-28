@@ -13,7 +13,7 @@ https://github.com/pexcn/openwrt-chinadns-ng/tree/luci
 cd openwrt-sdk
 
 # 获取源码
-git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
+git clone https://github.com/izilzty/luci-app-chinadns-ng.git package/luci-app-chinadns-ng
 
 # 选中 LuCI -> Applications -> luci-app-chinadns-ng
 make menuconfig
