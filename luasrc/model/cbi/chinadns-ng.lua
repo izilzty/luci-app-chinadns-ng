@@ -82,9 +82,50 @@ o = s:option(Flag, "noip_as_chnip",
 	translate("accept reply without ipaddr (A/AAAA query)"))
 o.rmempty     = false
 
-o = s:option(Flag, "no_ipv6",
+o = s:option(Value, "no_ipv6",
 	translate("disable ipv6-address query"),
 	translate("disable ipv6-address query (qtype: AAAA)"))
+o:value("0", translate("none"))
+o:value("a", translate("all (-a)"))
+o:value("m", translate("name with tag chn (-m)"))
+o:value("g", translate("name with tag gfw (-g)"))
+o:value("n", translate("name with tag none (-n)"))
+o:value("c", translate("do not forward to china upstream (-c)"))
+o:value("t", translate("do not forward to trust upstream (-t)"))
+o:value("C", translate("check answer ip of china upstream (-C)"))
+o:value("T", translate("check answer ip of trust upstream (-T)"))
+o.default     = "0"
+
+o = s:option(Value, "default_tag", translate("Domain default tag"))
+o:value("none", translate("tag none"))
+o:value("chn", translate("tag chn"))
+o:value("gfw", translate("tag gfw"))
+o.default     = "none"
+o.rmempty     = false
+
+o = s:option(Value, "ipset_name4", translate("Specify ipset/nft name for china ipv4"))
+o.placeholder = "chnroute"
+o.default     = "chnroute"
+o.rmempty     = false
+
+o = s:option(Value, "ipset_name6", translate("Specify ipset/nft name for china ipv6"))
+o.placeholder = "chnroute6"
+o.default     = "chnroute6"
+o.rmempty     = false
+
+o = s:option(Value, "add_tagchn_ip", translate("Add the ip of tag chn to ipset/nft"),
+translate("Use commas to separate ipv4 and ipv6 table name, all table name must be specified"))
+o.placeholder = ""
+o.default     = ""
+
+o = s:option(Value, "add_taggfw_ip", translate("Add the ip of tag gfw to ipset/nft"),
+    translate("Use commas to separate ipv4 and ipv6 table name, all table name must be specified"))
+o.placeholder = ""
+o.default     = ""
+
+o = s:option(Flag, "verbose",
+	translate("Verbose log"),
+	translate("Print the verbose log"))
 o.rmempty     = false
 
 return m
