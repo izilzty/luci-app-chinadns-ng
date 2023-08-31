@@ -95,6 +95,7 @@ o:value("t", translate("do not forward to trust upstream (t)"))
 o:value("C", translate("check answer ip of china upstream (C)"))
 o:value("T", translate("check answer ip of trust upstream (T)"))
 o.default     = "0"
+o.rmempty     = false
 
 o = s:option(Value, "default_tag", translate("Domain default tag"))
 o:value("none", "none")
