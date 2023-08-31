@@ -14,7 +14,7 @@ o.rmempty     = false
 
 o = s:option(Flag, "fair_mode",
 	translate("Enable the Fair_Mode"),
-	translate("Enable the Fair_Mode or use the Compete_Mode"))
+	translate("Enable the Fair_Mode or use the Compete_Mode. Only fair mode from version 2023.03.06"))
 o.rmempty     = false
 
 o = s:option(Value, "bind_port", translate("Listen Port"))
@@ -97,28 +97,28 @@ o:value("T", translate("check answer ip of trust upstream (T)"))
 o.default     = "0"
 
 o = s:option(Value, "default_tag", translate("Domain default tag"))
-o:value("none", translate("tag none"))
-o:value("chn", translate("tag chn"))
-o:value("gfw", translate("tag gfw"))
+o:value("none", "none")
+o:value("chn", "chn")
+o:value("gfw", "gfw")
 o.default     = "none"
 o.rmempty     = false
 
-o = s:option(Value, "ipset_name4", translate("Specify ipset/nft name for china ipv4"))
+o = s:option(Value, "ipset_name4", translate("Specify ipset/nftset name for china ipv4"))
 o.placeholder = "chnroute"
 o.default     = "chnroute"
 o.rmempty     = false
 
-o = s:option(Value, "ipset_name6", translate("Specify ipset/nft name for china ipv6"))
+o = s:option(Value, "ipset_name6", translate("Specify ipset/nftset name for china ipv6"))
 o.placeholder = "chnroute6"
 o.default     = "chnroute6"
 o.rmempty     = false
 
-o = s:option(Value, "add_tagchn_ip", translate("Add the ip of tag chn to ipset/nft"),
+o = s:option(Value, "add_tagchn_ip", translate("Add the ip of tag chn to ipset/nftset"),
 translate("Use commas to separate ipv4 and ipv6 table name, all table name must be specified"))
 o.placeholder = ""
 o.default     = ""
 
-o = s:option(Value, "add_taggfw_ip", translate("Add the ip of tag gfw to ipset/nft"),
+o = s:option(Value, "add_taggfw_ip", translate("Add the ip of tag gfw to ipset/nftset"),
     translate("Use commas to separate ipv4 and ipv6 table name, all table name must be specified"))
 o.placeholder = ""
 o.default     = ""
